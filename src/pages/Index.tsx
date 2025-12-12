@@ -1,13 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import VideoBackground from "@/components/VideoBackground";
+import SocialLinks from "@/components/SocialLinks";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="relative min-h-screen flex flex-col items-center justify-center px-6 noise">
+      <VideoBackground />
+      
+      <div className="relative z-10 flex flex-col items-center gap-12 md:gap-16">
+        <h1 
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground text-glow opacity-0 animate-fade-in"
+          style={{ animationDelay: '0.2s' }}
+        >
+          CYBERHEROIN
+        </h1>
+        
+        <SocialLinks />
       </div>
-    </div>
+    </main>
   );
 };
 
